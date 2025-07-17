@@ -79,7 +79,7 @@ st.markdown("---")
 # === Leer opciones desde hoja 'Lista Servicio' (A2:A5, técnicos en G2:G10) ===
 wb_temp = load_workbook(TEMPLATE_PATH, data_only=True)
 ws_lista = wb_temp["Lista Servicio"]
-tipo_opciones = [ws_lista[f"A{row}"].value for row in range(2, 7)]
+tipo_opciones = [ws_lista[f"A{row}"].value for row in range(2, 15)]
 tecnicos_opciones = [ws_lista[f"G{row}"].value for row in range(2, 11) if ws_lista[f"G{row}"].value]
 
 # === Leer datos de clientes desde hoja "Clientes" ===
