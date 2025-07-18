@@ -311,7 +311,7 @@ tecnico_upper = tecnico.upper()
 
 # === Validación de campos obligatorios según tipo de servicio ===
 if st.button("📥 Generar Informe Excel"):
-    campos_requeridos = CAMPOS_OBLIGATORIOS_POR_TIPO[tipo]
+    campos_requeridos = CAMPOS_OBLIGATORIOS_POR_TIPO.get (tipo,[])
     campos_faltantes = []
 
     # Verificar cada campo obligatorio según el tipo
