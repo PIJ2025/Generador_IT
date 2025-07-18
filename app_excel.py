@@ -72,6 +72,7 @@ with col_logo:
 with col_title:
     st.markdown("<br><br>", unsafe_allow_html=True)  # Agrega dos líneas de espacio
     st.title("\n\nGenerador de Informe Técnico")
+    st.markdown('<p style="font-size:12px; color:gray; margin-top:-10px;">by Francisco Bello</p>', unsafe_allow_html=True)
 
 st.markdown("---")
 
